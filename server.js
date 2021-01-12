@@ -18,9 +18,9 @@ app.use(express.json());
 // app.set('view engine', 'handlebars');
 
 // Import routes and give the server access to them.
-// TODO-const routes = require('./controllers/catsController.js');
+const routes = require('./controllers/burgers_controller.js');
 
-// TODO-app.use(routes);
+app.use(routes);
 
 // Start our server so that it can begin listening to client requests.
 app.listen(PORT, () =>
