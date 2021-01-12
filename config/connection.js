@@ -1,3 +1,4 @@
+// Reference: Week-13-CatsApp
 // Set up MySQL connection.
 const mysql = require('mysql');
 
