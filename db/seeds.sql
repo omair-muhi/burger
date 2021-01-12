@@ -8,3 +8,6 @@ VALUES ("Zinger", false);
 
 INSERT INTO burgers(burger_name, devoured)
 VALUES ("McArabia", false);
+
+INSERT INTO burgers(burger_name, devoured)
+VALUES ("Mushroom Melt", true);
