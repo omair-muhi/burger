@@ -1,0 +1,73 @@
+<!-- {{!-- Reference: Week-13 - CatsApp --}} -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <link rel="stylesheet" href="/assets/css/style.css" type="text/css" /> -->
+    <title>Eat Da Burger!</title>
+    <style>
+        img {
+            display: block;
+            max-width: 25%;
+            height: 25%;
+        }
+    </style>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body class="bg-info">
+    <div class="jumbotron-fluid bg-primary">
+        <img src="/assets/images/amirali-mirhashemian-sc5sTPMrVfk-unsplash.jpg" class="rounded-circle mx-auto d-block"
+            alt="A burger image">
+        <h1 class="text-center">Eat Da Burger!</h1>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6 text-center">
+                <form>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <button class="btn btn-primary btn-outline-dark" type="button">Submit</button>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Burger Name">
+                    </div>
+                </form>
+                <p class="lead">
+                    Enter a burger you want to eat and then click submit.
+                </p>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                {{{body}}}
+            </div>
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                {{!-- {{{devouredBurgers}}} --}}
+            </div>
+        </div>
+        <div class="row text-center mt-5">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <span class="small">Photo by <a
+                        href="https://unsplash.com/@amir_v_ali?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">amirali
+                        mirhashemian</a> on <a
+                        href="https://unsplash.com/s/photos/burger?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a>
+                </span>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+    </div>
+</body>
+
+</html>
