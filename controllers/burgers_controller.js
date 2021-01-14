@@ -12,9 +12,9 @@ router.get('/index', (req, res) => {
     const hbsObject = {
         burgers: [
             { id: 1, name: "Big Mac", devoured: false },
-            { id: 2, name: "Zinger", devoured: false },
+            { id: 2, name: "Zinger", devoured: true },
             { id: 3, name: "McArabia", devoured: false },
-            { id: 4, name: "Mushroom Melt", devoured: false }
+            { id: 4, name: "Mushroom Melt", devoured: true }
         ],
     };
     console.log(hbsObject);
