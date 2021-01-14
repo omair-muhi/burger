@@ -12,6 +12,7 @@ This is a one-page full-stack application demonstrating use of dynamic front-end
 ## Usage 
 * To install: `npm install`
 * To run: `npm run start`
+* Access at: https://blooming-brook-13473.herokuapp.com/index
 
 ## Credits
 * UoT FSF Bcamp - this template
