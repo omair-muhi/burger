@@ -17,7 +17,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 const newDevouredState = {
                     devoured: true,
                 };
-
                 fetch(`/api/burgers/${id}`, {
                     method: 'PUT',
                     headers: {
@@ -53,23 +52,25 @@ document.addEventListener('DOMContentLoaded', (event) => {
             };
 
             // Send POST request to create a new burger
-            fetch('/api/burgers', {
-                method: 'POST',
-                headers: {
-                    Accept: 'application/json',
-                    'Content-Type': 'application/json',
-                },
+            if (newBurger.burger_name !== '') {
+                fetch('/api/burgers', {
+                    method: 'POST',
+                    headers: {
+                        Accept: 'application/json',
+                        'Content-Type': 'application/json',
+                    },
 
-                // make sure to serialize the JSON body
-                body: JSON.stringify(newBurger),
-            }).then(() => {
-                // Empty the form
-                document.getElementById('burger-name').value = '';
+                    // make sure to serialize the JSON body
+                    body: JSON.stringify(newBurger),
+                }).then(() => {
+                    // Empty the form
+                    document.getElementById('burger-name').value = '';
 
-                // Reload the page so the user can see the new burger on LHS
-                console.log('Created a new burger!');
-                location.reload('/index');
-            });
+                    // Reload the page so the user can see the new burger on LHS
+                    console.log('Created a new burger!');
+                    location.reload('/index');
+                });
+            }
         });
     }
 });
