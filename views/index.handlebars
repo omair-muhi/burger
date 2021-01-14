@@ -4,7 +4,7 @@
         {{#unless devoured}}
         <li class="list-group-item d-flex justify-content-between align-items-center">
             {{this.burger_name}}
-            <button type="button" class="btn btn-warning">Devour It!</button>
+            <button type="button" class="btn btn-warning devour-it" data-id="{{this.id}}">Devour It!</button>
         </li>
         {{/unless}}
         {{/each}}
