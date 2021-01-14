@@ -39,4 +39,37 @@ document.addEventListener('DOMContentLoaded', (event) => {
             });
         });
     }
+
+    // CREATE
+    const çreateNewBurger = document.getElementById('create-burger');
+
+    if (çreateNewBurger) {
+        çreateNewBurger.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            // Get burger name and create JSON object
+            const newBurger = {
+                burger_name: document.getElementById('burger-name').value.trim(),
+            };
+
+            // Send POST request to create a new burger
+            fetch('/api/burgers', {
+                method: 'POST',
+                headers: {
+                    Accept: 'application/json',
+                    'Content-Type': 'application/json',
+                },
+
+                // make sure to serialize the JSON body
+                body: JSON.stringify(newBurger),
+            }).then(() => {
+                // Empty the form
+                document.getElementById('burger-name').value = '';
+
+                // Reload the page so the user can see the new burger on LHS
+                console.log('Created a new burger!');
+                location.reload('/index');
+            });
+        });
+    }
 });
