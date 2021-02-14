@@ -13,7 +13,7 @@ This is a one-page full-stack application demonstrating use of dynamic front-end
 * To install: `npm install`
 * To run: `npm run start`
 * Access at: https://blooming-brook-13473.herokuapp.com/index
-
+![Burger main screen!](images/landing-page.png)
 ## Credits
 * UoT FSF Bcamp - this template
 * Code adaoted from Week-13-Activity #17 - CatsApp
